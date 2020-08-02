@@ -1,74 +1,24 @@
-const config = require('./config/site');
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
 
 module.exports = {
   siteMetadata: {
-    ...config,
+    title:'Sando Bujutsu',
+    description: 'Willkomen auf der Sando Bujutsu Homepage',
+    author:'Simon'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/content/posts`,
-      },
-    },
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              quality: 90,
-              linkImagesToOriginal: true,
-            },
-          },
-          'gatsby-remark-prismjs',
-        ],
-      },
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/static/logo`,
-      },
-    },
-    {
-    resolve: 'gatsby-plugin-emotion',
-    options: {
-      autoLabel: process.env.NODE_ENV !== 'production',
-      // eslint-disable-next-line
-      labelFormat: `[filename]--[local]`,
-    },
-  },
-  {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'config/typography.js',
-      },
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.title,
-        short_name: config.shortName,
-        description: config.description,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
-        icon: config.favicon,
-      },
-    },
-    'gatsby-plugin-offline',
-  ],
-};
+    'gatsby-transformer-remark',
+      {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          name: 'posts',
+          path: `${__dirname}/content/posts`
+        }
+      }
+    ]
+  }

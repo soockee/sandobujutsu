@@ -1,152 +1,99 @@
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://i.imgur.com/mW3HLrn.png"
-      height="80"
-      alt="gatsby-v2-tutorial-starter"
-      title="Gatsby v2 Tutorial Starter"
-    />
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
+<h1 align="center">
+  Gatsby's hello-world starter
+</h1>
 
-<p align="center">
-  <a href="https://circleci.com/gh/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://circleci.com/gh/justinformentin/gatsby-v2-tutorial-starter.svg?style=svg"
-      alt="CircleCI"
-    />
-  </a>
-  <a href="https://codeclimate.com/github/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://codeclimate.com/github/justinformentin/gatsby-v2-tutorial-starter/badges/gpa.svg"
-      alt="Maintainability"
-    />
-  </a>
-  <a href="https://codeclimate.com/github/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://codeclimate.com/github/justinformentin/gatsby-v2-tutorial-starter/badges/issue_count.svg"
-      alt="Issues"
-    />
-  </a>
-  <a href="https://www.codacy.com/app/justinformentin/gatsby-v2-tutorial-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=justinformentin/gatsby-v2-tutorial-starter&amp;utm_campaign=Badge_Grade">
-    <img
-      src="https://api.codacy.com/project/badge/Grade/c910ab2b18a24dde80cfc05b73c908aa"
-      alt="Code Quality"
-    />
-  </a>
-  <a href="https://david-dm.org/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://img.shields.io/david/justinformentin/gatsby-v2-tutorial-starter.svg"
-      alt="Dependencies"
-    />
-  </a>
-  <a href="https://github.com/prettier/prettier">
-    <img
-      src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"
-      alt="styled with prettier"
-    />
-  </a>
-  <a href="https://www.netlify.com">
-    <img
-      src="https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg"
-      alt="deploys by netlify"
-    />
-  </a>
-</p>
+Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-<p align="center">
-  <strong>
-    View the demo at <a href="https://gatsby-tutorial-starter.netlify.com">gatsby-tutorial-starter.netlify.com</a>.
-  </strong>
-</p>
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-<p align="center">
-  <strong>
-    Read the full step by step guide: <a href="https://justinformentin.com/guide-to-building-a-gatsby-site">Guide to Build a Gatsby Site with Perfect Pagespeed Scores</a></a>.
-  </strong>
-</p>
+## 🚀 Quick start
 
-## Features
+1.  **Create a Gatsby site.**
 
-- Gatsby v2
-- Emotion for styling
-- Code syntax highlighting
-- Tags
-- SEO
-  - Sitemap generation
-  - Schema.org JSON-LD for Google Rich Snippets
-  - Twitter Tags
-  - OpenGraph Tags for Facebook/Google+/Pinterest
-  - robots.txt
-- Typography.js
-- Typefaces for faster font loading
-- Offline Support
-- Manifest Support
-- Gatsby Image
-  - Responsive images
-  - Traced SVG Loading with Lazy-Loading
-  - WebP Support
-- Development tools
-  - ESLint for linting
-  - Prettier for code style
-  - CircleCI support
-  - Google Lighthouse Optimization
+    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
 
-# Lighthouse Audit
+    ```shell
+    # create a new Gatsby site using the hello-world starter
+    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    ```
 
-<p align="center">
-  <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://i.imgur.com/YOVC76X.png"
-      alt="Google Lighthouse Audit"
-      title="Google Lighthouse Audit"
-    />
-  </a>
-</p>
+1.  **Start developing.**
 
-# Usage
+    Navigate into your new site’s directory and start it up.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/justinformentin/gatsby-v2-tutorial-starter)
+    ```shell
+    cd my-hello-world-starter/
+    gatsby develop
+    ```
 
-```bash
-Download project
-# With `gatsby-cli`
-gatsby new my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter
+1.  **Open the source code and start editing!**
 
-OR
+    Your site is now running at `http://localhost:8000`!
 
-# Cloning
-git clone my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter.git
-cd my-site
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-THEN
+    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-# Install dependencies
-npm i
+## 🧐 What's inside?
 
-# Start dev server
-gatsby develop
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-# Build for production
-gatsby build
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-# Format with Prettier
-npm format
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-```
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-## Folder structure
-```bash
-├──.circleci # Circleci integration
-├── config # Theme and site metadata
-├── content # Post markdown and images
-├── src
-│   ├── components
-│   ├── layouts
-│   ├── pages
-│   ├── style
-│   └── templates # For Post and Tag page generation
-├── static # Images for logo and favicon, and robots.txt
-├── gatsby-config.js # Plugin loading and configuration
-└── gatsby-node.js # Generate posts/tags and modify webpack
-```
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
