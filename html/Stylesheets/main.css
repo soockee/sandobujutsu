@@ -22,7 +22,7 @@
 /* For width 400px and larger: */
 @media only screen and (min-width: 400px) {
     #mmenu_screen_1--banner {
-      background-image: url('http://localhost:8080/img/banner.jpg');
+      background-image: url('../img/banner.jpg');
       /* Full height */
         height: 100%;
 
@@ -33,7 +33,7 @@
     }
     #mmenu_screen_3--cover {
         background-color: white;
-        background-image: url('http://localhost:8080/img/karata-girl-black-white.svg');
+        background-image: url('../img/karata-girl-black-white.svg');
         /* Full height */
           height: 100%;
   
@@ -44,7 +44,7 @@
     }
     #mmenu_screen_4--cover {
         background-color: white;
-        background-image: url('http://localhost:8080/img/karata-girl.jpg');
+        background-image: url('../img/karata-girl.jpg');
         /* Full height */
           height: 100%;
   
