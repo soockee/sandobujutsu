@@ -4,7 +4,7 @@
 #
 # See our Developer Handbook for more information:
 # http://docs.divio.com/en/latest/reference/docker-docker-compose.html
-version: "3.8"
+version: "3.3"
 
 services:
   sandobujutsu-server:
