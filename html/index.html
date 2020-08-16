@@ -8,64 +8,76 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <title>Sando Bu Jutsu</title>
   </head>
   <body>
-    <div id="mmenu_header"class="row flex-fill" style="background-color: rgb(26, 26, 26)">
-        <nav class="navbar navbar-expand-sm navbar-dark" id="mmenu_header_nav">
-            <a class="navbar-brand" href="#">
-                <img src="img/mon_till13-klein.png" alt="" loading="lazy">
-                Sando Bujutsu
-            </a>
+    <div id="mmenu_header" style="background-color: rgb(26, 26, 26)">
+        <nav class="navbar navbar-expand-md navbar-dark justify-content-between" id="mmenu_header_nav">
+          <div class="container-fluid">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav justify-content-around w-100 ">
+
+            <div class="collapse navbar-collapse dual-nav w-50 order-1 order-md-0" id="collapsibleNavbar">
+              <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Wissenswertes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Impressum</a>
                 </li>    
               </ul>
-            </div>  
-          </nav>
+            </div>
+
+            <a href="\" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">
+                <img src="img/mon_till13-klein.png" alt="" loading="lazy">
+            </a>
+
+              <div class="collapse navbar-collapse dual-nav w-50 order-2" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fab fa-instagram"></i> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+        </nav>
     </div>
     <div id="mmenu_screen_1" class="container-fluid main_container text-white d-flex" style="background-color: rgb(26, 26, 26);">
           <div class="row flex-fill">
-            <div class="col-4 h-90">
+            <div class="col-4">
                 <div class="row h-75">
-                    <div class="col-sm-12" id="mmenu_screen_1--section-1">
+                    <div class="col-12" id="mmenu_screen_1--section-1">
                        <h1>Sando Bu Jutsu</h1>
                     </div>
                 </div>
                 <div class="row h-25 align-items-center justify-content-start">
-                    <div class="col-sm-3">
-
-                    </div>
-                    <div class="col-sm-3">
+                    <div class="col-4"></div>
+                    <div class="col-4">
                         <button type="button" class="btn btn-danger">Button</button>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-4">
                         <button type="button" class="btn btn-danger">Button</button>
                     </div>
                 </div>
             </div>
-            <div class="col-6 h-90 flex-fill align-self-center" >
-                <img src="/img/landing_animation1.png" class="image-fluid" alt="responsive image"  width="100%" s>
-            </div>
-        </div>
+            <div class="col-8 h-75 align-self-end" id="mmenu_screen_1-cover"></div>
     </div>
+  </div>
     <div id="mmenu_screen_2" class="container-fluid main_container bg-primary text-white d-flex">
         <div class="row flex-fill">
-            <div class="col-sm-6 mmenu_screen_2--direktaction bg-faded flex-fill" id="mmenu_screen_2--banner">
-              
-            </div>
+            <div class="col-sm-6 mmenu_screen_2--direktaction bg-faded flex-fill" id="mmenu_screen_2--banner"> </div>
             <div class="col-sm-6 h-100">
               <div class="row h-50 bg-warning">
                   <div class="col-sm-12" id="mmenu_screen_2--section-1">
@@ -92,8 +104,33 @@
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.5.0.min.js"></script>
+      <!-- library needed -->
+      <script src="imagesloaded.pkgd.min.js"></script>
+      <script src="three.min.js"></script>
+      <script src="TweenMax.min.js"></script>
+      <script src="hover-effect.umd.js"></script>
   </body>
+
+  <script>
+    imagesLoaded( document.querySelectorAll('img'), () => {
+				document.body.classList.remove('loading');
+			});
+      
+			Array.from(document.querySelectorAll('#mmenu_screen_1-cover')).forEach((el) => {
+				new hoverEffect({
+					parent: el,
+					intensity: el.dataset.intensity || undefined,
+					speedIn: el.dataset.speedin || undefined,
+					speedOut: el.dataset.speedout || undefined,
+					easing: el.dataset.easing || undefined,
+					hover: el.dataset.hover || undefined,
+					image1: "img/karata-girl.jpg",
+					image2: "img/karata-girl2.jpg",
+					displacementImage: "img/karata-girl2.jpg"
+				});
+			});
+</script>
 </html>
