@@ -1,36 +1,29 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../layouts'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { ClientsBlock } from '../components/ClientsBlock';
+import { ContactsBlock } from '../components/ContactsBlock';
+import { InfoBlock } from '../components/InfoBlock';
+import { Menu } from '../components/Menu';
+import { StartBlock } from '../components/StartBlock';
+import '../styles/index.scss';
 
-export default ({ data }) => {
-  const { edges } = data.allMarkdownRemark
+function Index() {
   return (
-    <Layout>
-        <h1>Gatsby Tutorial Site Home Page</h1>
-        {edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>{node.frontmatter.title}{" "}</h3>
-            <p>{node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
-    </Layout>
-  )
+    <main>
+      <Helmet>
+        {/* web and mail */}
+        <meta name='yandex-verification' content='9446566f608a8694' />
+        {/* web master */}
+        <meta name='yandex-verification' content='7617eb4c080fd9ce' />
+        <title>Citrus Sports Marketing Agency</title>
+      </Helmet>
+      <Menu />
+      <StartBlock />
+      <InfoBlock />
+      <ClientsBlock />
+      <ContactsBlock />
+    </main>
+  );
 }
 
-export const query = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          excerpt(pruneLength:100)
-          frontmatter {
-            title
-            date
-          }
-        }
-      }
-    }
-  }
-`
+export default Index;
