@@ -9,7 +9,7 @@ export function Menu() {
 
   return (
     <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
-      <div className='navbar-brand'>
+      {/* <div className='navbar-brand'>
         <a
           aria-label='Return to the top of the website'
           className={cs('navbar-item', 'is-hidden-desktop', 'navbar-logo-link')}
@@ -44,7 +44,7 @@ export function Menu() {
           <span aria-hidden='true'></span>
           <span aria-hidden='true'></span>
         </a>
-      </div>
+      </div> */}
 
       <div id='navbar' className={cs('navbar-menu', 'has-text-centered', {
         'is-active': isExpanded,
