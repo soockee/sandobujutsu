@@ -51,15 +51,15 @@ export function Menu() {
       })}>
         <div className='navbar-start'>
           <a className='navbar-item' href='#info' onClick={onClose}>
-            <span className='navbar-brand-item'>Зачем</span>
+            <span className='navbar-brand-item'>Über Uns</span>
           </a>
 
           <a className='navbar-item' href='#clients' onClick={onClose}>
-            <span className='navbar-brand-item'>Кому</span>
+            <span className='navbar-brand-item'>Wissenswertes</span>
           </a>
 
           <a className='navbar-item' href='#contacts' onClick={onClose}>
-            <span className='navbar-brand-item'>Как</span>
+            <span className='navbar-brand-item'>Kontakt</span>
           </a>
         </div>
       </div>

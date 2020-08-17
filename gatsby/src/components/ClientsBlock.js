@@ -34,24 +34,24 @@ export const ClientsBlock = withMenuComponentBlock({
     return <>
       {renderClientLeftBlock({
         background: '01',
-        title: 'Если ты - спортсмен',
+        title: 'Lorem Ipsum',
         textLines: [
-          `Сделаем анализ твоего аккаунта`,
-          `Подберем твой личный стиль оформления`,
-          `Найдем ниши постов, которыми ты сможешь делиться со своими подписчиками`,
-          `Научим общаться с аудиторией`,
-          `Расскажем, как находить спонсоров`,
-          `Научим основам деловой переписки с потенциальными спонсорами`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
         ]
       })}
       {renderClientRightBlock({
         background: '02',
-        title: 'Если вы - бренд',
+        title: 'Lorem Ipsum',
         textLines: [
-          `Сделаем анализ ваших конкурентов`,
-          `Проведем анализ соц. сетей`,
-          `Подберем визуал для оформления`,
-          `Поможем найти инфлюенсеров для сотрудничества`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
+          `Lorem Ipsum`,
         ]
       })}
     </>
