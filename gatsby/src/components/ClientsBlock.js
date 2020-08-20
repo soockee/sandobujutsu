@@ -22,7 +22,7 @@ const renderClientLeftBlock = ({ background, title, textLines }) => <div classNa
 
 const renderClientRightBlock = ({ background, title, textLines }) => <div className='columns'>
   <div className='column is-2 is-hidden-desktop' />
-  <div className='column is-6 is-hidden-touch' />
+  <div className='column is-7 is-hidden-touch' />
   {renderContent({ background, title, textLines })}
   <div className='column is-1 is-hidden-touch' />
   <div className='column is-2 is-hidden-desktop' />
