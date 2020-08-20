@@ -13,10 +13,6 @@ function Index() {
   return (
     <main>
       <Helmet>
-        {/* web and mail */}
-        <meta name='yandex-verification' content='9446566f608a8694' />
-        {/* web master */}
-        <meta name='yandex-verification' content='7617eb4c080fd9ce' />
         <title>Sando Bujutsu</title>
       </Helmet>
       <Menu />

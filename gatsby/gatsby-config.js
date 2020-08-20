@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Citrus Sport Marketing Agency',
+    title: 'Sando Bu Jutsu',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Citrus Sport Marketing Agency',
-        short_name: 'Citrus',
+        name: 'Sando Bu Jutsu',
+        short_name: 'SandoBuJutsu',
         start_url: '/',
         icon: 'src/images/c-logo.png',
       },
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
-        lang: 'ru'
+        lang: 'de'
       }
     }
   ],
