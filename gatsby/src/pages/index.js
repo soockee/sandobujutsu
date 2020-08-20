@@ -20,6 +20,7 @@ function Index() {
       <Menu />
       <StartBlock />
       <InfoBlock />
+      <HoursBlock />
       <ClientsBlock />
       <ContactsBlock />
     </main>
