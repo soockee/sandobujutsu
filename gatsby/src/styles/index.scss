@@ -101,11 +101,11 @@ body {
 #hours {
   @include center-block;
 
-  top: 100%;
+  top: 300%;
 }
 
 #clients {
-  top: 200%;
+  top: 400%;
 
   & > .columns {
     height: 50%;
@@ -115,7 +115,7 @@ body {
 #contacts {
   @include center-block;
 
-  top: 300%;
+  top: 500%;
 
   background-color: $turbo;
 }
