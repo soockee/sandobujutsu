@@ -44,8 +44,8 @@ $abbey: #4c4c4e;
 $black: #000;
 $cod-gray: #111;
 $white: #fff;
-// yellow
-$turbo: #FFE300;
+// red
+$turbo: #4f8df1;
 $tangerine: #F19000;
 // green
 $apple: #6AB04C;
@@ -154,8 +154,16 @@ a.navbar-item:hover {
   &-300 {
     font-weight: 300;
   }
+  &-300-white{
+    font-weight: 300;
+    color: $white;
+  }
   &-400 {
     font-weight: 400;
+  }
+  &-500-white{
+    font-weight: 500;
+    color: $white;
   }
   &-700 {
     font-weight: 700;
@@ -311,6 +319,20 @@ a.navbar-item:hover {
 .brand-turbo-underline {
   @include brand-underline;
   background-image: url(../images/brand-turbo-highlight.svg);
+  &-white{
+    color:$white
+  }
+}
+
+.brand-red-underline{
+  // brand higlights made by https://vectr.com/
+  @include brand-underline;
+  background-image: url(../images/brand-red-highlight.svg);
+  &-white{
+    @include brand-underline;
+    background-image: url(../images/brand-red-highlight.svg);
+    color:$white
+  }
 }
 
 .brand-white-underline {

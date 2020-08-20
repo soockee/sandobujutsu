@@ -21,8 +21,8 @@ function Index() {
       </Helmet>
       <Menu />
       <StartBlock />
-      <InfoBlock />
       <HoursBlock />
+      <InfoBlock />
       <ClientsBlock />
       <ContactsBlock />
     </main>
