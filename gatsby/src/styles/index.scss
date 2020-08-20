@@ -68,6 +68,7 @@ body {
 
 #about,
 #info,
+#hours,
 #clients,
 #contacts {
   width: 100%;
@@ -93,6 +94,11 @@ body {
 }
 
 #info {
+  @include center-block;
+
+  top: 100%;
+}
+#hours {
   @include center-block;
 
   top: 100%;
@@ -264,6 +270,11 @@ a.navbar-item:hover {
     padding: 30px 100px;
     border: 40px solid $turbo;
   }
+  .hours-column {
+    width: 750px;
+    padding: 30px 100px;
+    border: 40px solid $turbo;
+  }
 }
 
 // mobile
@@ -278,6 +289,11 @@ a.navbar-item:hover {
   }
 
   .info-column {
+    padding: 75px 0;
+    border-top: 20px solid $turbo;
+    border-bottom: 20px solid $turbo;
+  }
+  .hours-column {
     padding: 75px 0;
     border-top: 20px solid $turbo;
     border-bottom: 20px solid $turbo;
