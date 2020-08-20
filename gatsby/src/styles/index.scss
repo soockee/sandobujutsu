@@ -68,6 +68,7 @@ body {
 
 #about,
 #info,
+#hours,
 #clients,
 #contacts {
   width: 100%;
@@ -75,7 +76,7 @@ body {
 }
 
 #about {
-  @include background('../images/citrus-background.jpg');
+  @include background('../images/fuji-background.jpg');
 
   font-weight: 300;
 
@@ -97,9 +98,14 @@ body {
 
   top: 100%;
 }
+#hours {
+  @include center-block;
+
+  top: 200%;
+}
 
 #clients {
-  top: 200%;
+  top: 300%;
 
   & > .columns {
     height: 50%;
@@ -109,7 +115,7 @@ body {
 #contacts {
   @include center-block;
 
-  top: 300%;
+  top: 400%;
 
   background-color: $turbo;
 }
@@ -264,6 +270,11 @@ a.navbar-item:hover {
     padding: 30px 100px;
     border: 40px solid $turbo;
   }
+  .hours-column {
+    width: 750px;
+    padding: 30px 100px;
+    border: 40px solid $turbo;
+  }
 }
 
 // mobile
@@ -278,6 +289,11 @@ a.navbar-item:hover {
   }
 
   .info-column {
+    padding: 75px 0;
+    border-top: 20px solid $turbo;
+    border-bottom: 20px solid $turbo;
+  }
+  .hours-column {
     padding: 75px 0;
     border-top: 20px solid $turbo;
     border-bottom: 20px solid $turbo;
