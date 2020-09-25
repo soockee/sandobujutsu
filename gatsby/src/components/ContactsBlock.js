@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import { withMenuComponentBlock } from './withMenuComponentBlock';
 
 export const ContactsBlock = withMenuComponentBlock({
@@ -37,6 +38,23 @@ export const ContactsBlock = withMenuComponentBlock({
             sando.bujutsu
           </a>  
         </div>
+        <div className='column is-full has-text-centered is-size-3-desktop is-size-6-touch'>
+          <a
+            className='sn-link'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://www.facebook.com/SandoBuJutsu/'
+          >
+            {/* instagram svg */}
+            <svg className='facebook' xmlns='http://www.w3.org/2000/svg' width="32" height="32" viewBox="0 0 75 80">
+              <path d="M42 27H12C6.486 27 2 31.486 2 37v30c0 5.514 4.486 10 10 10h30c5.514 0 10-4.486 10-10V37C52 31.486 47.514 27 42 27zM41 44h-3c-2.145 0-3 .504-3 2v3h6l-1 6h-5v20h-7V55h-3v-6h3v-3c0-4.677 1.581-8 7-8 2.902 0 6 1 6 1V44z"></path>
+            </svg>
+            Sando Bujutsu
+          </a>  
+        </div>
+      </div>
+      <div className='column is-full has-text-centered is-size-5-desktop is-size-3-touch'>
+        <Link to="/impressum" className='brand-white-underline'>Impressum</Link>
       </div>
     </div>
   </>,

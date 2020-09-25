@@ -54,6 +54,10 @@ export function Menu() {
             <span className='navbar-brand-item'>Über Uns</span>
           </a>
 
+          <a className='navbar-item' href='#hours' onClick={onClose}>
+            <span className='navbar-brand-item'>Trainingszeiten</span>
+          </a>
+
           <a className='navbar-item' href='#clients' onClick={onClose}>
             <span className='navbar-brand-item'>Wissenswertes</span>
           </a>
