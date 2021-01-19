@@ -102,6 +102,12 @@ body {
   @include center-block;
 
   top: 200%;
+
+  & > .hoursblock {
+    display: flex;
+    height: 100%;
+
+  }
 }
 
 #clients {
@@ -110,6 +116,7 @@ body {
   & > .columns {
     height: 50%;
   }
+
 }
 
 #contacts {
@@ -224,7 +231,7 @@ a.navbar-item:hover {
 // desktop
 @media screen and (min-width: 1024px) {
   #clients {
-    @include background('../images/citrus-background-2.png');
+    @include background('../images/karate-1.png');
     background-size: contain;
   }
 
