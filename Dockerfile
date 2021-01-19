@@ -7,12 +7,6 @@ RUN mkdir /app && \
     chmod 775 /usr/share/nginx/html/ 
     
 
-<<<<<<< HEAD
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY html /usr/share/nginx/html
-EXPOSE 80
-=======
 # npm and gatsby
 RUN apt-get update && apt-get -y install npm && npm i -g gatsby-cli
 COPY gatsby /home/blog
@@ -27,4 +21,3 @@ RUN mv /home/blog/public/* /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 ##COPY default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
->>>>>>> gatsby-V2
