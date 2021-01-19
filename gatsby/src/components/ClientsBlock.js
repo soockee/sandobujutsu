@@ -69,10 +69,11 @@ export const ClientsBlock = withMenuComponentBlock({
           `International Goju Ryu Federation`,
         ],
         background2: '03',
-        title2: 'Jung Do Mu Sul Kupso Sul',
+        title2: 'Kupso Sul / Kyusho Jutsu',
         textLines2: [
           `Nervendruck- und Vitalpunkte`,
-          `Jung Do Mu Sul Kupso Sul Ryu`,
+          `Zweikampfanwendungen`,
+          'Energetisches Training'
         ]
       })}
     </>
