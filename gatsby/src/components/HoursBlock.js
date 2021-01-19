@@ -1,5 +1,5 @@
-import React from 'react';
-import { withMenuComponentBlock } from './withMenuComponentBlock';
+import React from 'react'
+import { withMenuComponentBlock } from './withMenuComponentBlock'
 import karate_img from '../images/karate-2.png'
 
 
@@ -7,7 +7,7 @@ import karate_img from '../images/karate-2.png'
 class HoursBlockImg extends React.Component{
   render(){
     return  <div>
-      <img src={karate_img} alt="karate_img" />;
+      <img src={karate_img} alt="karate_img" />
     </div>
   }
 }
@@ -23,9 +23,9 @@ class HoursBlockContent extends React.Component{
 }
 
 export function HoursBlock(){
-  return (<div id='hours' className='block'>
+  return <div id='hours' className='block'>
     <div className='empty-space'></div>
     <HoursBlockImg />
     <HoursBlockContent />
-  </div>);
+  </div>
 }

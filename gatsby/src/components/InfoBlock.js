@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import karate_img from '../images/karate-4.png'
 
 
 class InfoBlockImg extends React.Component{
   render(){
     return  <div>
-      <img src={karate_img} alt="karate_img" />;
+      <img src={karate_img} alt="karate_img" />
     </div>
   }
 }
@@ -21,9 +21,9 @@ class InfoBlockContent extends React.Component{
 }
 
 export function InfoBlock(){
-  return (<div id='info' className='block'>
+  return <div id='info' className='block'>
     <div className='empty-space'></div>
     <InfoBlockContent />
     <InfoBlockImg />
-  </div>);
+  </div>
 }

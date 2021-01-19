@@ -4,7 +4,7 @@ import { withMenuComponentBlock } from './withMenuComponentBlock';
 const renderTitle = title => <div className='client-title brand-turbo-underline'>{title}</div>;
 
 const renderContent = ({ background1, title1, textLines1 }) =>
-  <div className='column is-size-4-widescreen is-size-5-desktop is-size-6-touch is-size-7-small-mobile'>
+  <div className='column is-size-4-widescreen is-size-5-desktop is-size-6-touch is-full-mobile'>
     <div className='number-background'>{background1}</div>
     <div className='client-content'>
       {renderTitle(title1)}
@@ -13,7 +13,7 @@ const renderContent = ({ background1, title1, textLines1 }) =>
   </div>;
 
 const renderContent2 = ({ background2, title2, textLines2 }) =>
-<div className='column is-size-4-widescreen is-size-5-desktop is-size-6-touch is-size-7-small-mobile'>
+<div className='column is-size-4-widescreen is-size-5-desktop is-size-6-touch is-half-mobile'>
   <div className='number-background'>{background2}</div>
   <div className='client-content'>
     {renderTitle(title2)}
@@ -21,23 +21,26 @@ const renderContent2 = ({ background2, title2, textLines2 }) =>
   </div>
 </div>;
 
-const renderClientLeftBlock = ({ background1, title1, textLines1 }) => <div className='columns'>
-  <div className='column is-2 is-hidden-desktop' />
-  <div className='column is-1 is-hidden-touch' />
-  {renderContent({ background1, title1, textLines1 })}
-  <div className='column is-4 is-hidden-touch' />
-  <div className='column is-2 is-hidden-desktop' />
+const renderContent3 = ({ background3, title3, textLines3 }) =>
+<div className='column is-size-4-widescreen is-size-5-desktop is-size-6-touch is-half-mobile'>
+  <div className='number-background'>{background3}</div>
+  <div className='client-content'>
+    {renderTitle(title3)}
+    <ul className='client-text'>{textLines3.map((textLine, id) => <li key={id}>{textLine}</li>)}</ul>
+  </div>
 </div>;
 
-const renderClientRightBlock = ({ background1, title1, textLines1, background2, title2, textLines2 }) => <div className='columns'>
+const renderClientLeftBlock = ({ background1, title1, textLines1 }) => <div className='columns'>
+  <div className='column is-1 is-hidden-touch' />
   <div className='column is-1 is-hidden-desktop' />
-  <div className='column is-1 is-hidden-touch' />
   {renderContent({ background1, title1, textLines1 })}
-  <div className='column is-1 is-hidden-touch' />
-  <div className='column is-2 is-hidden-desktop' />
-  {renderContent2({ background2, title2, textLines2 })}
-  
 
+</div>;
+
+const renderClientRightBlock = ({ background3, title3, textLines3, background2, title2, textLines2 }) => <div className='columns'>
+  {renderContent3({ background3, title3, textLines3 })}
+  <div className='column is-2 is-hidden-touch' />
+  {renderContent2({ background2, title2, textLines2 })}
 </div>;
 
 export const ClientsBlock = withMenuComponentBlock({
@@ -56,9 +59,9 @@ export const ClientsBlock = withMenuComponentBlock({
         ]
       })}
       {renderClientRightBlock({
-        background1: '02',
-        title1: 'Okinawa Goju Ryu Karate',
-        textLines1: [
+        background3: '02',
+        title3: 'Okinawa Goju Ryu Karate',
+        textLines3: [
           `Traditionelle Kampfkunst Okinawas`,
           `Nahkampforientiert`,
           `Kata- und Partnerübungen`,

@@ -8,7 +8,21 @@ export function Menu() {
 
   return (
     <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
-    
+      <a
+          aria-expanded={isExpanded}
+          aria-label='menu'
+          className={cs('navbar-burger', 'burger', {
+            'is-active': isExpanded,
+          })}
+          data-target='navbar'
+          onClick={onToggle}
+          role='button'
+          type='button'
+        >
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+      </a>
       <div id='navbar' className={cs('navbar-menu', 'has-text-centered', {
         'is-active': isExpanded,
       })}>

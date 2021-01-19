@@ -113,9 +113,9 @@ body {
 #clients {
   top: 300%;
 
-  & > .columns {
-    height: 50%;
-  }
+  // & > .columns {
+  //   height: 50%;
+  // }
 
 }
 
@@ -192,8 +192,9 @@ a.navbar-item:hover {
 
 .number-background {
   position: absolute;
+  opacity: 0.3;
   z-index: -1;
-  color: rgba(230, 230, 230, 0.7);
+  color: $abbey;
   user-select: none;
   font-weight: 600;
 }
@@ -228,11 +229,65 @@ a.navbar-item:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
+
+// touch
+@media screen and (max-width: 1023px) {
+  #clients {
+    @include background('../images/karate-1.png');
+    background-size: contain;
+  } 
+  .column-title {
+    margin-bottom: 1rem;
+  }
+  .column-links {
+    margin: 1rem;
+  }
+
+  
+  .envelope, .instagram {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+// tablet and desktop
+@media screen and (min-width: 600px) {
+  .number-background {
+    font-size: 12rem;
+  }
+  .client-content {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  #clients {
+    @include background('../images/karate-1.png');
+    background-size: contain;
+
+    & > .columns {
+    height: 50%;
+    }
+  }
+  .info-column {
+    width: 750px;
+    padding: 30px 100px;
+    border: 40px solid $turbo;
+  }
+  .hours-column {
+    width: 750px;
+    padding: 30px 100px;
+    border: 40px solid $turbo;
+  }
+}
 // desktop
 @media screen and (min-width: 1024px) {
   #clients {
     @include background('../images/karate-1.png');
     background-size: contain;
+    & > .columns {
+    height: 50%;
+    }
   }
 
   .column-title {
@@ -250,59 +305,18 @@ a.navbar-item:hover {
     vertical-align: middle;
   }
 }
-
-// touch
-@media screen and (max-width: 1023px) {
-  .column-title {
-    margin-bottom: 1rem;
-  }
-
-  .column-links {
-    margin: 1rem;
-  }
-
-  .envelope, .instagram {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-}
-
-// tablet and desktop
-@media screen and (min-width: 600px) {
-  .number-background {
-    font-size: 12rem;
-  }
-
-  .client-content {
-    margin-top: 10px;
-    margin-left: 50px;
-  }
-
-  .info-column {
-    width: 750px;
-    padding: 30px 100px;
-    border: 40px solid $turbo;
-  }
-  .hours-column {
-    width: 750px;
-    padding: 30px 100px;
-    border: 40px solid $turbo;
-  }
-}
-
 // mobile
 @media screen and (max-width: 601px) {
   .number-background {
     font-size: 6rem;
   }
-
   .client-content {
-    margin-top: 35px;
-    margin-left: 25px;
+    font-size: 0.70rem !important;
   }
-
+  #clients {
+    @include background('../images/karate-1.png');
+    background-size: 40% 40%;
+  }
   .info-column {
     padding: 75px 0;
     border-top: 20px solid $turbo;
